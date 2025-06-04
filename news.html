@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новини</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        header {
+            background-color: #ff0000;
+            color: white;
+            padding: 10px 0;
+            font-style: italic;
+        }
+
+        header .logo {
+            height: 150px;
+        }
+
+        nav {
+            background-color: #343a40;
+        }
+
+        nav a {
+            color: white !important;
+        }
+
+        @media (max-width: 1200px) {
+            .navbar-nav {
+                width: 100%;
+            }
+
+            .navbar-nav .nav-item {
+                width: 100%;
+            }
+
+            .navbar-nav .nav-link {
+                width: 100%;
+                padding-left: 1rem;
+            }
+
+            .carousel-inner img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .slider {
+            margin: 20px 0;
+        }
+
+        .news-item {
+            padding: 15px;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            margin-bottom: 10px;
+            cursor: pointer; /* Додаємо курсор, щоб показати клікабельність */
+        }
+
+        .news-item-content {
+            display: none; /* Приховуємо вміст за замовчуванням */
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .welcome {
+            margin: 30px auto;
+            padding: 40px;
+            max-width: 900px;
+            background-color: #f3d8dc;
+            border-left: 8px solid #fd0d0d;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            background-color: #ff0000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="text-center">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="https://nupp.edu.ua/uploads/files/0/main/nupp_logo.webp" alt="Логотип" class="logo">
+            <h1 class="flex-grow-1">Факультет Комп'ютерних Наук</h1>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="main.html">Головна</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">Про сайт</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Галерея</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">Новини</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5">
+        <h2 class="mb-4 text-center">Останні новини</h2>
+
+        <div class="news-item">
+            <h4>Полтавська політехніка взяла участь у ключовій дискусії щодо майбутнього української науки</h4>
+            <p>Представники університету долучилися до національного діалогу про розвиток наукової сфери України.</p>
+            <div class="news-item-content">
+                <p>Проректор із наукової роботи Національного університету «Полтавська політехніка імені Юрія Кондратюка», доктор технічних наук, професор Олена Степова взяла участь у презентації трансформації наукової сфери.</p>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <h4>У Полтавській політехніці відбулися урочистості з нагоди Дня науки та пленарне засідання 77-ої наукової конференції професорів, викладачів, наукових працівників, аспірантів та студентів</h4>
+            <p>Захід об'єднав науковців різних галузей, які презентували свої дослідження та обговорили перспективи розвитку.</p>
+            <div class="news-item-content">
+                <p>16 травня у рамках проведення XІХ Всеукраїнського фестивалю науки у Полтавській політехніці відбулося пленарне засідання 77-ї наукової конференції професорів, викладачів, наукових працівників, аспірантів та студентів університету. Досягненнями в галузі науки поділилися професори, молоді вчені та талановита студентська молодь Полтавської політехніки.</p>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <h4>День науки у Полтавській політехніці – час підсумків, визнання і вдячності!</h4>
+            <p>Університет вшанував досягнення науковців, викладачів та студентів за їхній внесок у розвиток науки.</p>
+            <div class="news-item-content">
+                <p>У святковий день, присвячений науці, в університеті вшанували найуспішніші підрозділи. За результатами рейтингу навчально-наукових інститутів та факультетів переможцям урочисто вручили почесні кубки.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; Національний університет «Полтавська політехніка імені Юрія Кондратюка»
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            // Приховуємо всі розширені тексти новин за замовчуванням
+            $('.news-item-content').hide();
+
+            // Додаємо обробник подій кліку для кожного елемента новини
+            $('.news-item').click(function () {
+                // Знаходимо блок з додатковим вмістом всередині поточної новини та перемикаємо його видимість з ефектом слайдера
+                $(this).find('.news-item-content').slideToggle('slow');
+            });
+        });
+    </script>
+</body>
+
+</html>
